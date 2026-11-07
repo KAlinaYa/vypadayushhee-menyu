@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Выпадающее меню</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <a href="/" class="header__logo"
+          ><img src="img/logo.png" alt="PULSE"
+        /></a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="" class="nav__link">Пространство</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Проекты</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Команды</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu">
+          <button type="button" class="profile-btn" id="menuToggle">
+            Антон
+          </button>
+          <ul class="menu__list" id="dropdownMenu">
+            <li class="menu__item menu__item--bg-green">
+              <a href="/" class="menu__link">
+                <img
+                  src="img/profile-photo.png"
+                  width="54"
+                  height="54"
+                  alt="Фото"
+                  class="menu__img"
+                />
+                <div class="menu__profile-info">
+                  <p class="menu__profile-name">Антон Смирнов</p>
+                  <p class="menu__profile-position">Креативный директор</p>
+                </div>
+              </a>
+            </li>
+            <li class="menu__item menu__item--bg-white">
+              <a href="/" class="menu__link">Профиль</a>
+            </li>
+            <li class="menu__item menu__item--bg-light-green">
+              <a href="/" class="menu__link menu__link--detail"
+                >Уведомления
+                <span>8</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="/" class="menu__link menu__item--bg-blue">Внешний вид</a>
+            </li>
+            <li class="menu__item">
+              <a href="/" class="menu__link menu__item--bg-orange">Оплата</a>
+            </li>
+            <li class="menu__item">
+              <a href="/" class="menu__link menu__item--bg-purple">Выйти</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main class="main">
+        <section class="banner">
+          <div class="banner__left">
+            <h1 class="banner__title">Твори без лимитов</h1>
+            <p class="banner__subtitle">
+              Идеи заслуживают смелого воплощения. Сотрудничайте со своей
+              командой, черпайте вдохновение и выполняйте творческую работу
+              быстрее.
+            </p>
+            <button type="button" class="banner__btn">Начать проект</button>
+          </div>
+          <div class="banner__right">
+            <ul class="banner__list">
+              <li class="banner__item">
+                <span class="details__item-number">52</span>
+                <p class="details__item-text">Активных задач</p>
+              </li>
+              <li class="banner__item">
+                <span class="details__item-number">18</span>
+                <p class="details__item-text">Членов команды онлайн</p>
+              </li>
+              <li class="banner__item">
+                <span class="details__item-number">92%</span>
+                <p class="details__item-text">Еженедельных целей закрыто</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
